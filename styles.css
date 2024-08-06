@@ -37,18 +37,18 @@ button {
     cursor: pointer;
 }
 
-midi-player {
+.vis midi-player {
     display: block;
     width: inherit;
     margin: 4px;
     margin-bottom: 0;
 }
-midi-player::part(control-panel) {
+.vis midi-player::part(control-panel) {
     background: #fdfdfd;
     border: 2px solid #000;
     border-radius: 10px 10px 0 0;
 }
-midi-player::part(play-button) {
+.vis midi-player::part(play-button) {
     color: #111;
     border: 2px solid currentColor;
     background-color: #fdfdfd;
@@ -56,17 +56,17 @@ midi-player::part(play-button) {
     transition: all 0.2s;
     content: 'hello';
 }
-midi-player::part(play-button):hover {
+.vis midi-player::part(play-button):hover {
     color: #000;
     background-color: #fdfdfd;
     border-radius: 10px;
 }
-midi-player::part(time) {
+.vis midi-player::part(time) {
     font-family: monospace;
 }
   
   /* Custom visualizer style */
-midi-visualizer .piano-roll-visualizer {
+.vis midi-visualizer .piano-roll-visualizer {
     background: #f1f1f1;
     border: 2px solid black;
     border-top: none;
@@ -75,20 +75,20 @@ midi-visualizer .piano-roll-visualizer {
     margin-top: 0;
     overflow: auto;
 }
-midi-visualizer svg rect.note {
+.vis midi-visualizer svg rect.note {
     opacity: 0.7;
     stroke-width: 0.5;
 }
-midi-visualizer svg rect.note[data-instrument="0"]{
+.vis midi-visualizer svg rect.note[data-instrument="0"]{
     fill: #fb5f42;
 }
-midi-visualizer svg rect.note[data-instrument="1"]{
+.vis midi-visualizer svg rect.note[data-instrument="1"]{
     fill: #2c7873;
 }
-midi-visualizer svg rect.note[data-instrument="2"]{
+.vis midi-visualizer svg rect.note[data-instrument="2"]{
     fill: #375e97;
 }
-midi-visualizer svg rect.note.active {
+.vis midi-visualizer svg rect.note.active {
     opacity: 1;
     stroke: #000;
 }

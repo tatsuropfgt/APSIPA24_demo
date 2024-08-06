@@ -24,24 +24,32 @@
             </span><br>
             This is the demo page of the paper submitted to <a href="http://www.apsipa2024.org/">APSIPA2024</a>: <i>On the Importance of Time and Pitch Relativity for Transformer-based Symbolic Music Generation.</i><br>
             We gave the model first 4 bars, and each model generated the continuation for 12 bars.
+
         </p>
-        <h3>Ground truth</h3>
+        <h4>Ground truth</h4>
+        <section class="vis type1">
         <midi-player
             src="https://tatsuropfgt.github.io/APSIPA24_demo/media/ground-truth.mid"
-            sound-font visualizer="midi-visualizer">
+            sound-font visualizer="#Vis-GT">
         </midi-player>
         <midi-visualizer
-            src="https://tatsuropfgt.github.io/APSIPA24_demo/media/ground-truth.mid">
+            src="https://tatsuropfgt.github.io/APSIPA24_demo/media/ground-truth.mid"
+            type="piano-roll"
+            id="Vis-GT">
         </midi-visualizer>
-
-        <h3>event-based relative attention</h3>
+        </section>
+        <h4>event-based relative attention</h4>
+        <section class="vis type1">
         <midi-player
             src="https://tatsuropfgt.github.io/APSIPA24_demo/media/event-Rel.mid"
-            sound-font visualizer="midi-visualizer">
+            sound-font visualizer="#Vis-eRel">
         </midi-player>
         <midi-visualizer
-            src="https://tatsuropfgt.github.io/APSIPA24_demo/media/event-Rel.mid">
+            src="https://tatsuropfgt.github.io/APSIPA24_demo/media/event-Rel.mid"
+            type="piano-roll"
+            id="Vis-eRel">
         </midi-visualizer>
+        </section>
     </main>
     <footer>
         <p>On the Importance of Time and Pitch Relativity for Transformer-based Symbolic Music Generation</p>

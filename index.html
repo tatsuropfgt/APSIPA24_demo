@@ -8,14 +8,30 @@
 </head>
 <body>
     <header>
-        <h1>"On the Importance of Time and Pitch Relativity for Transformer-based Symbolic Music Generation"</h1>
+        <h1>On the Importance of Time and Pitch Relativity<br>
+            for Transformer-based Symbolic Music Generation</h1>
     </header>
     <main>
-        <p id="demoText">This is a demo page of the paper "On the Importance of Time and Pitch Relativity for Transformer-based Symbolic Music Generation" submitted to APSIPA2024.</p>
+        <p>
+            <span style="text-align: center; display: block;">Tatsuro Inaba, Kazuyoshi Yoshii, and Eita Nakamura</span><br>
+            This is the demo page of the paper submitted to <a href="http://www.apsipa2024.org/">APSIPA2024</a>: <i>On the Importance of Time and Pitch Relativity for Transformer-based Symbolic Music Generation.</i><br>
+            We gave the model first 4 bars, and each model generated the continuation for 12 bars.
+        </p>
+        <section id="section3">
+            <h2></h2>
+            <midi-player
+                src="/assets/ground-truth.mid"
+                sound-font visualizer="#section3 midi-visualizer">
+            </midi-player>
+            <midi-visualizer
+                src="">
+            </midi-visualizer>
+        </section>
     </main>
     <footer>
         <p>On the Importance of Time and Pitch Relativity for Transformer-based Symbolic Music Generation</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.4.0"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Demo Page</title>
+    <title>On the Importance of Time and Pitch Relativity for Transformer-based Symbolic Music Generation</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,15 +13,35 @@
     </header>
     <main>
         <p>
-            <span style="text-align: center; display: block;">Tatsuro Inaba, Kazuyoshi Yoshii, and Eita Nakamura</span><br>
+            <span style="text-align: center; display: block;">
+                Tatsuro Inaba<sup class="footnote" data-footnote="1">1</sup>, 
+                Kazuyoshi Yoshii<sup class="footnote" data-footnote="1">1</sup>, 
+                Eita Nakamura<sup class="footnote" data-footnote="2">2</sup><br>
+                <span style="font-style: italic; color: #555;">
+                    <sup class="footnote" data-footnote="1">1</sup>Kyoto University, 
+                    <sup class="footnote" data-footnote="2">2</sup>Kyushu University
+                </span>
+            </span><br>
             This is the demo page of the paper submitted to <a href="http://www.apsipa2024.org/">APSIPA2024</a>: <i>On the Importance of Time and Pitch Relativity for Transformer-based Symbolic Music Generation.</i><br>
             We gave the model first 4 bars, and each model generated the continuation for 12 bars.
         </p>
-        <section id="section3">
-            <h2>Custom player and visualizer style</h2>
-            <midi-player src="https://tatsuropfgt.github.io/APSIPA24_demo/media/jazz.mid" sound-font visualizer="#section3 midi-visualizer"> </midi-player>
-            <midi-visualizer src="https://tatsuropfgt.github.io/APSIPA24_demo/media/jazz.mid"> </midi-visualizer>
-        </section>
+        <h3>Ground truth</h3>
+        <midi-player
+            src="https://tatsuropfgt.github.io/APSIPA24_demo/media/ground-truth.mid"
+            sound-font visualizer="midi-visualizer">
+        </midi-player>
+        <midi-visualizer
+            src="https://tatsuropfgt.github.io/APSIPA24_demo/media/ground-truth.mid">
+        </midi-visualizer>
+
+        <h3>event-based relative attention</h3>
+        <midi-player
+            src="https://tatsuropfgt.github.io/APSIPA24_demo/media/event-Rel.mid"
+            sound-font visualizer="midi-visualizer">
+        </midi-player>
+        <midi-visualizer
+            src="https://tatsuropfgt.github.io/APSIPA24_demo/media/event-Rel.mid">
+        </midi-visualizer>
     </main>
     <footer>
         <p>On the Importance of Time and Pitch Relativity for Transformer-based Symbolic Music Generation</p>
